@@ -1,0 +1,17 @@
+
+age_input = input("Enter your age: ").strip()
+
+
+age = int(age_input)
+
+if age > 0:
+       
+        if age >= 10:
+            if age <= 20:
+                print(" Age is between 10 and 20 years.")
+            else:
+                print(" Age is greater than 20 years.")
+        else:
+            print(" Age is less than 10 years.")
+    else:
+        print(" Age must be a positive number.")
