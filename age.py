@@ -13,5 +13,5 @@ if age > 0:
                 print(" Age is greater than 20 years.")
         else:
             print(" Age is less than 10 years.")
-    else:
+else:
         print(" Age must be a positive number.")
