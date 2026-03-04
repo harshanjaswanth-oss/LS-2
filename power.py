@@ -1,9 +1,18 @@
 
-base = int(input("Enter base: "))
-exp = int(input("Enter exponent: "))
+base = float(input("Enter the base number: "))
+exponent = int(input("Enter the exponent (integer): "))
 
-i = 1
-for _ in range(exp):
-    i = i * i
 
-print("Result:", i)
+result = 1
+if exponent >= 0:
+    for i in range(exponent):
+        result = result * base
+else:
+    for i in range(-exponent):
+        result = result * base
+    result = 1 / result
+
+
+print("Result:", result)
+
+
